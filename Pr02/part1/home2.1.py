@@ -1,14 +1,17 @@
 number1= int (input('input number = '))
-print ('Понеділок')
-number2= int (input('input number = '))
-print ('Вівторок')
-number3= int (input('input number = '))
-print ('Середа')
-number4= int (input('input number = '))
-print('Четвер')
-number5= int (input('input number = '))
-print('Пятниця')
-number6= int (input('input number = '))
-print('Субота')
-number7= int (input('input number = '))
-print('Неділя')
+if (number1==1):
+    print ('Понеділок')
+elif number1==2:
+    print ('Вівторок')
+elif number1==3:
+    print ('Середа')
+elif number1==4:
+    print('Четвер')
+elif number1==5:
+    print('П\'ятниця')
+elif number1==6:
+    print('Субота')
+elif number1==7:
+    print('Неділя')
+else :
+    print('ви ввели неправильну дату')
