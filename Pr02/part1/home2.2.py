@@ -1,36 +1,27 @@
-number= int (input('input number = '))
-if number 1: 
-print ('Січень')
-number= int (input('input number = '))
-if number 2:
-print ('Лютий')
-number= int (input('input number = '))
-if number 3:
-print ('Березень')
-number= int (input('input number = '))
-if number 4:
-print('Квітень')
-number= int (input('input number = '))
-if number 5:
-print('Травень')
-number= int (input('input number = '))
-if number 6:
-print('Червень')
-number= int (input('input number = '))
-if number 7:
-print('Липень')
-number= int (input('input number = '))
-if number 8:
-print('Серпень')
-number= int (input('input number = '))
-if number 9:
-print('Вересень')
-number= int (input('input number = '))
-if number 10:
-print('Жовтень')
-number= int (input('input number = '))
-if number 11:
-print('Листопад')
-number= int (input('input number = '))
-if number 12:
-print('Грудень')
+number1= int (input('input number = '))
+if (number1==1):
+    print ('Січень')
+elif number1==2:
+    print ('Лютий')
+elif number1==3:
+    print ('Березень')
+elif number1==4:
+    print('Квітень')
+elif number1==5:
+    print('Травень')
+elif number1==6:
+    print('Червень')
+elif number1==7:
+    print('Липень')
+elif number1==8:
+    print('Серпень')
+elif number1==9:
+    print('Вересень')
+elif number1==10:
+    print('Жовтень')
+elif number1==11:
+    print('Листопад')
+elif number1==12:
+    print('Грудень')
+else :
+    print('ви ввели невірне число')
