@@ -5,9 +5,11 @@
 # экран измененный текст. 
 
 
-text = input("Введіть текст: ")
-reserved_words = input("Введіть список зарезервованих слів через кому: ").split(",")
-for word in reserved_words:
-   text = text.replace(word.strip('funny'),word.strip('bad').upper())
-print("Змінений текст:", text)
-
+mstr= 'good boy funny sad'
+while True:
+   n=mstr.find('boy')
+   if n!=-1:
+      mstr = mstr.replace('boy','BOY')
+   else:
+      break
+   print(mstr)
