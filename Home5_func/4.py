@@ -12,4 +12,4 @@ def min_of_five(a, b, c, d, e):
    if e < min_number:
        min_number = e
    return min_number
-print(min_of_five(1,2,3,4,5))
+print(min_of_five(123,1,100,545,321))

@@ -4,14 +4,34 @@
 # ■ если она равна True, квадрат заполненный;
 # ■ если False, квадрат пустой.
 
-def square(side, symbol, peremennaya):  
-    for i in range(side):
-        for j in range(side):
-            if peremennaya or i == 0 or j == 0 or i == side - 1 or j == side - 1:
-                print(symbol, end=' ')
-            else:
-                print(' ', end='')
-print()
-square(4, '*', True)
-square(4, '*', False)
 
+def print_square(side_length, symbol, filled):
+
+    if filled:
+# Заполненный квадрат
+
+        for i in range(side_length):
+
+            print(symbol * side_length)
+
+    else:
+# Пустой квадрат
+
+        for i in range(side_length):
+
+            if i == 0 or i == side_length - 1:
+# Верхняя и нижняя границы квадрата
+
+                print(symbol * side_length)
+
+        else:
+# Стороны квадрата
+
+            print(symbol + " " * (side_length - 2) + symbol)    
+
+# print_square(4, "*", True)
+
+print_square(4, "*", False)
+
+
+# В этой функции мы используем логическую переменную filled

@@ -1,9 +1,13 @@
 # Напишите функцию, которая принимает два числа
 # в качестве параметра и отображает все четные числа
 # между ними.
-def multiples (a,b):
-    if a==b==2:
-        return True
-    else:
-        return False
-multiples()
+n= int(input("Внесіть число: "))
+n1= int(input("Внесіть число: "))
+
+def all_even(a,b):
+    if a %2 !=0:
+        a+=1
+    for i in range(a,b,2):
+        print(i, end=" ")
+
+all_even(n,n1)
