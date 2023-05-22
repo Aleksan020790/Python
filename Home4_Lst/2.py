@@ -5,27 +5,24 @@
 
 import random
 
-pozitiv=0
-negativ=0
-zero=0
-a=[]
-for i in range(20):
-    a.append(random.randint(-10,20))
-    print((a[i]),end=" ")
+lst = [random.randint(-20, 30) for _ in range(50)]
 
-min_el= min(a)
-max_el= max(a)
+min_element = min(lst)
 
-if a[i]>0:
-     pozitiv+=1
-elif a[i]<0:
-    negativ+=1
-elif a [i]==0:
-    zero+=1 
-print("Позитивних чисел:" ,pozitiv)
-print("Негативних чисел:",negativ)
-print("Чисела які дорівнюють нулю:",zero)
-print("min=",min_el)
-print("max=",max_el)
+max_element = max(lst)
 
+negative_count = sum(1 for i in lst if i < 0)
 
+positive_count = sum(1 for i in lst if i > 0)
+
+zero_count = sum(1 for i in lst if i == 0)
+
+print("Minimum element:", min_element)
+
+print("Maximum element:", max_element)
+
+print("Negative elements count:", negative_count)
+
+print("Positive elements count:", positive_count)
+
+print("Zero elements count:", zero_count)
