@@ -11,35 +11,25 @@
 # ■ Сформировать третий список, содержащий только
 # минимальное и максимальное значение каждого из
 # списков.
-s1=[int(i)for i in input().split()]
-print(s1)
-s2=[int(i)for i in input().split()]
-print(s2)
-s3= s1+s2
-print(s3)
-# s1=min(s1)
-# print("min=",s1)
-# s2=min(s2)
-# print("min=",s2)
-# s1=max(s1)
-# print("max=",s1)
-# s2=max(s2)
-# print("max=",s2)
-# ■ Сформировать третий список, содержащий только
-# уникальные элементы каждого из списков;
-if len (set(s3))==len (s3):
-    print ("Всі елементи унікальні")  
-else:  
-    print ("Є однакові")
-# ■ Сформировать третий список, содержащий элементы
-# обоих списков без повторений;
-for k in s3:
-        if s3.count(k)==1:
-         s3.append (k)
-print(s3)
-# ■ Сформировать третий список, содержащий элементы
-# общие для двух списков;
+import random
 
+lst1=random. sample(range(1,100),10)
+lst2=random. sample(range(1,100),10)
+lst3=lst1+lst2
 
-# s3=max(s3)
-# print("max=",s3)
+lst3_unique=list(set(lst3))
+lst3_common=list(set([ x for x in lst1 if x in lst2]))
+lst1_unique=list(set(lst1)-set(lst2))
+lst2_unique=list(set(lst2)-set(lst1))
+lst3_unique_each=lst1_unique+ lst2_unique
+lst1_min_max=[min(lst1),max(lst1)]
+lst2_min_max=[min(lst2),max(lst2)]
+lst3_min_max=lst1_min_max+lst2_min_max
+
+print("Список1:", lst1)
+print("Список2:", lst2)
+print("Список,що містить всі елементи:", lst3)
+print("Список,що містить всі унікальні елементи:",lst3_unique)
+print("Список,що містить всі спільні елементи:",lst3_common)
+print("Список,що містить всі унікальні елементи кожного списку:",lst3_unique_each)
+print("Список,що містить мінімальне та макимальне значення кожного списку:",lst3_min_max)
